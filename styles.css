@@ -215,12 +215,16 @@ footer {
     header nav ul li a {
         padding: 10px 20px;
     }
-
+    .profile-container {
+        width: 50%; /* Adjust width for mobile, you can also use 'max-width' or percentage */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        max-width: 131px; /* Ensure the image doesn't exceed the original width */
+    }
     section {
         padding: 1rem;
         margin: 10px 0;
     }
-
+    
     .intro,
     .project {
         padding: 1rem;
