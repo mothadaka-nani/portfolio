@@ -215,15 +215,20 @@ footer {
     header nav ul li a {
         padding: 10px 20px;
     }
-    .profile-container {
-        width: 50%; /* Adjust width for mobile, you can also use 'max-width' or percentage */
-        height: auto; /* Adjust height to maintain aspect ratio */
-        max-width: 131px; /* Ensure the image doesn't exceed the original width */
-    }
     .intro {
         flex-direction: column; /* Change layout to column on mobile */
         align-items: center; /* Center align the text and image */
         padding: 10px; /* Reduce padding */
+    }
+    .profile-container {
+        width: 100%; /* Take full width */
+        max-width: 130px; /* Limit the max width to 131px */
+        position: relative; /* Set position to relative for absolute positioning */
+        height: 0;
+        padding-top: 30%; /* (150 / 131) * 100 to maintain 131:150 aspect ratio */
+        background-image: url('nani1.jpg');
+        background-size: cover; /* Ensure image covers the container */
+        background-position: center;
     }
     .intro-text {
         text-align: center; /* Center text below the image */
