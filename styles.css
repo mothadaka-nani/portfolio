@@ -104,6 +104,51 @@ header nav ul li a:hover {
     background-color: #f4f4f4;
     color: #000000;
 }
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000000; /* Background color for contrast */
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white; /* Ensures text color is white */
+}
+
+.profile-container {
+    background-image: url(nani1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* min-height: 150px; */
+    width: 131px; /* Profile image takes 30% width */
+    height: 150px; /* Image fills the height of .intro */
+    border-radius: 20px; /* Rounded corners */
+    flex-shrink: 0; /* Prevents shrinking */
+    opacity: 0;
+}
+
+.intro-text {
+    flex: 1; /* Text takes the remaining space */
+    padding-left: 20px; /* Space between image and text */
+    color: white; /* Ensures text inside .intro-text is white */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white; /* Make the text bright white */
+}
+
+p {
+    font-size: 16px;
+    color: white; /* Ensure paragraph text is white */
+}
+
+.first-mainly:hover .profile-container {
+    opacity: 1; /* Make the image visible on hover */
+    transform: scale(1.1); /* Slightly enlarge for effect */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
 section {
     padding: 0rem 3rem;

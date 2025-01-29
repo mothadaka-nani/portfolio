@@ -44,7 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #000033;
-    color:#a47e1b;
+    color:black;
 }
 
 .mainly {
@@ -52,7 +52,7 @@ body {
     position: relative;
     height: 85vh;
     width: 75vw;
-    background-image: url(white1.jpg) ;
+    background-image: url(c2.jpg) ;
     background-size:cover;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
@@ -113,7 +113,7 @@ section {
 }
 
 section h2 {
-    color: #000033;
+    color: #a47e1b;
     border-bottom: 2px solid #333;
     display: inline-block;
     margin-bottom: 1px;
@@ -122,10 +122,48 @@ section h2 {
     text-decoration:none;
 }
 .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     background-color: #e9e3e3;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
+    overflow: hidden;
 }
+
+.profile-container {
+    background-image: url(nani1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* min-height: 150px; */
+    width: 131px; /* Profile image takes 30% width */
+    height: 150px; /* Image fills the height of .intro */
+    border-radius: 20px; /* Rounded corners */
+    flex-shrink: 0; /* Prevents shrinking */
+    opacity: 0;
+}
+
+.intro-text {
+    flex: 1; /* Text takes the remaining space */
+    padding-left: 20px; /* Space between image and text */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: black; /* Ensure visibility */
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+.first-mainly:hover .profile-container {
+    opacity: 1; /* Make the image visible on hover */
+    transform: scale(1.1); /* Slightly enlarge for effect */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
 
 .backgblack {
     background: #e9e3e3;
