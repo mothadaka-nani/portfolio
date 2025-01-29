@@ -220,6 +220,14 @@ footer {
         height: auto; /* Adjust height to maintain aspect ratio */
         max-width: 131px; /* Ensure the image doesn't exceed the original width */
     }
+    .intro {
+        flex-direction: column; /* Change layout to column on mobile */
+        align-items: center; /* Center align the text and image */
+        padding: 10px; /* Reduce padding */
+    }
+    .intro-text {
+        text-align: center; /* Center text below the image */
+    }
     section {
         padding: 1rem;
         margin: 10px 0;
