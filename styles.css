@@ -225,7 +225,7 @@ footer {
         max-width: 130px; /* Limit the max width to 131px */
         position: relative; /* Set position to relative for absolute positioning */
         height: 0;
-        padding-top: 30%; /* (150 / 131) * 100 to maintain 131:150 aspect ratio */
+        padding-top: 50%; /* (150 / 131) * 100 to maintain 131:150 aspect ratio */
         background-image: url('nani1.jpg');
         background-size: cover; /* Ensure image covers the container */
         background-position: center;
@@ -247,5 +247,10 @@ footer {
 
     footer {
         position: relative; /* Changes position to avoid overlapping content */
+    }
+}
+@media (max-width: 400px){
+    .profile-container {
+        max-width: 100px;
     }
 }
