@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nani Mothadaka - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Default theme loaded from localStorage -->
+    <link id="themeStylesheet" rel="stylesheet" href="styles2.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="mainly">
@@ -17,7 +23,9 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="https://drive.google.com/file/d/1LTw7W4f00-4BP9HjaPrHHbvxWRBhBbXO/view?usp=drive_link">Resume</a></li>
+                    <li><a onclick="switchTheme()" href="">Theme</a></li>
                 </ul>
+                
             </nav>
         </header>
 
@@ -28,31 +36,39 @@
             </div>
         </section>
 
-        <section id="about">
+        <section class="backgblack" id="about">
             <h2>About Me</h2>
             <p>B.Tech in Computer Science Engineering (CGPA: 7.86)</p>
-            <p>I am a dedicated web developer with a strong passion for innovation and creativity. I thrive on crafting impactful digital solutions and am committed to delivering exceptional results that drive success. My goal is to continuously grow, embrace challenges, and contribute meaningfully to projects that inspire creativity and foster professional excellence</p>
+            <p style="display: inline;">I am a dedicated <p style=" 
+            display:inline;
+            text-shadow:  0 4px 6px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            ">web developer</p> with a strong passion for innovation and creativity. I thrive on crafting impactful digital solutions and am committed to delivering exceptional results that drive success.</p>
         </section>
     </div>
-    <div class="mainly">
+
+    <div data-aos="zoom-in" data-aos-duration="1000" class="mainly">
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
+            <div class="backgblack">
                 <h3>Portfolio Website</h3>
                 <p>Responsive web application showcasing skills and projects. Built with React.</p>
             </div>
-            <div class="project">
+            <div class="backgblack">
                 <h3>Sign Language Detection</h3>
                 <p>Real-time gesture recognition system using OpenCV and TensorFlow for translating hand gestures.</p>
             </div>
-            <div class="project">
+            <div class="backgblack">
                 <h3>Crop Yield Prediction</h3>
                 <p>Machine learning model for accurate crop yield predictions based on environmental data.</p>
             </div>
         </section>
     </div>
-    <div class="mainly">
-        <section id="skills">
+
+    <div data-aos="zoom-in" data-aos-duration="1000" class="mainly">
+        <section class="backgblack" id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Programming: Java, JavaScript</li>
@@ -61,10 +77,9 @@
                 <li>Soft Skills: Problem Solving, Critical Thinking</li>
             </ul>
         </section>
-        <section id="contact">
+        <section class="backgblack" id="contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:nani2mothadaka@gmail.com">nani2mothadaka@gmail.com</a></p>
-            <p>Phone: +91 9182549403</p>
             <p>GitHub: <a href="https://github.com/mothadaka-nani" target="_blank">mothadaka-nani</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/nanimothadaka" target="_blank">nanimothadaka</a></p>
         </section>
@@ -72,8 +87,9 @@
         <footer>
             <p> All content belongs to Nani Mothadaka.</p>
         </footer>
-        </div>
-        <script src="script.js"></script>
     </div>
+
+    <script src="script.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

@@ -2,6 +2,37 @@
 html {
     scroll-behavior: smooth;
 }
+/* Apply smooth transition to multiple properties */
+body.theme-transition {
+    transition: 
+        background-color 3s ease, 
+        color 3s ease, 
+        transform 3s ease, /* Add scaling effect */
+        box-shadow 3s ease, /* Add shadow effect */
+        filter 3s ease; /* Add blur effect */
+    transform: scale(1.05); /* Scale up the body during transition */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Apply shadow effect */
+    filter: blur(2px); /* Optional blur effect */
+}
+
+/* Apply smooth transition to navigation links and buttons */
+nav ul li a,
+button {
+    transition: 
+        background-color 5s ease, 
+        color 5s ease, 
+        transform 3s ease, /* Add scaling effect */
+        box-shadow 3s ease; /* Shadow effect */
+    transform: scale(1.1); /* Slightly scale up when hovered */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Optional: Apply the reverse effects when the transition ends */
+body.theme-transition.end {
+    transform: scale(1);
+    filter: blur(0);
+    box-shadow: none;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,8 +51,8 @@ body {
     position: relative;
     height: 85vh;
     width: 75vw;
-    background-image: url(one.jpg);
-    background-size: cover;
+    background-image: url(one2.png) ;
+    background-size:cover;
     border: 2px solid grey;
     border-radius: 30px;
     overflow: hidden;
@@ -54,12 +85,19 @@ header nav ul li {
 }
 
 header nav ul li a {
-    padding: 0px 10px 3px 10px;
-    border-radius: 10px;
-    border: 2px solid grey;
-    color: #fff;
     text-decoration: none;
     cursor: pointer;
+
+    display: inline-block;
+    background-color: #000000; /* Green */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded edges */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header nav ul li a:hover {
@@ -85,13 +123,15 @@ section h2 {
     border-radius: 20px;
 }
 
-.project {
+.backgblack {
     background: #000000;
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
 }
-
+#contact p a{
+    color:#ffffff ;
+}
 footer {
     position: absolute;
     bottom: 0px;
