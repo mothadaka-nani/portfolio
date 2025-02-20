@@ -53,8 +53,7 @@ body {
     width: 75vw;
     background-image: url(one2.png) ;
     background-size:cover;
-    border: 2px solid grey;
-    border-radius: 30px;
+    border-radius: 3px;
     overflow: hidden;
 }
 
